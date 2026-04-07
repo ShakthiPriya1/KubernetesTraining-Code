@@ -111,4 +111,3 @@ jobs:
             --title "chore: update image tag to ${{ steps.version.outputs.tag }}" \
             --body "Automated PR: update container image to \`${{ secrets.DOCKER_USERNAME }}/simple-react-app:${{ steps.version.outputs.tag }}\`"
 
- 
