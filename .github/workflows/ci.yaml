@@ -105,11 +105,9 @@ jobs:
           git commit -m "chore: update image tag to ${{ steps.version.outputs.tag }}"
           git push origin $BRANCH
           gh pr create \
-            --repo ShakthiPriya1/KubernetesTraining-Config \
+            --repo ShakthiPriya1/KubernetesTraining-Deploy \
             --base main \
             --head $BRANCH \
             --title "chore: update image tag to ${{ steps.version.outputs.tag }}" \
             --body "Automated PR: update container image to \`${{ secrets.DOCKER_USERNAME }}/simple-react-app:${{ steps.version.outputs.tag }}\`"
 
- 
- 
